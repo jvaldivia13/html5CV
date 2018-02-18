@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <header>
+  <body>
+    <svg height="130" width="500">
+      <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+          <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+          <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1" />
+        </linearGradient>
+      </defs>
+      <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+      <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">JAVC</text>
+      Sorry, your browser does not support inline SVG.
+    </svg>
+    <h1>Hoja de Vida</h1>
+  </header>
+  <nav>
+    <h2>Janier Asmat Valdivia Carrillo</h2>
+     <ul>
+       <li><a href="index.html">Inicio</a></li>
+       <li><a href="educacion.html">Educación</a></li>
+       <li><a href="experiencia.html">Experiencia</a></li>
+     </ul>
+  </nav>
+  <section>
+    <h3>Educación</h3>
+    <article class="estudios">
+      <table style="width:30%" border="2">
+      <tr>
+      <th>Año</th>
+      <th>Institución</th>
+      <th>Lugar</th>
+      <th>¿Culminó?</th>
+      </tr>
+      <tr>
+      <td>1998</td>
+      <td>Universidad Nacional Federico Villareal</td>
+      <td>1998</td>
+      <td>Si</td>
+      </tr>
+      <tr>
+      <td>2005</td>
+      <td>Universidad Nacional de Ingeneria</td>
+      <td>2005</td>
+      <td>Si</td>
+      </tr>
+      <tr>
+      <td>2017</td>
+      <td>Pontifica Universidad Católica del Perú</td>
+      <td>2017</td>
+      <td>Si</td>
+      </tr>
+    </table><br><br>
+
+    </article>
+
+    <article class="enviaDatos" >
+
+      <form action="index.html" method="post" >
+       <fieldset>
+          <legend>Agregar Estudios:</legend width=40% border=0>
+          <p>
+        		<label for="anio">Año Estudio: </label>
+        		<br>
+        		<input type="number" name="anio" placeholder="Ej: 2006" required>
+        	</p>
+          <p>
+            <label for="intitucion">Nombre de la Institucion</label>
+        		<br>
+        		<input type="text" name="institucion" placeholder="Ej: Univ. Nacional de Ingenieria" autofocus required>
+          </p>
+          <p>
+            <label for="lugar">Lugar</label>
+            <br>
+            <input type="text" name="lugar" placeholder="Ej: Lima" autofocus required>
+          </p>
+          <p>
+        		<label for="culimino">Culminó Estudios : </label>
+        		<br>
+        		<input type="radio" name="genre"> Si
+        		<br>
+        		<input type="radio" name="genre"> No
+        	</p>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+    </article>
+</body>
+</html>
